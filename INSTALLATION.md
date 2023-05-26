@@ -8,7 +8,7 @@ docker-compose run web bundle exec rake db:setup
 docker-compose up -d
 docker-compose run web bundle exec rake db:setup
 ```
-Then you can start app by:
+After the initialization, you can start app by:
 ```
 docker-compose up
 ```

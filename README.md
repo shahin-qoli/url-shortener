@@ -1,6 +1,13 @@
 # URL Shortener
 This application is designed to provide a simple and efficient way to shorten URLs. It has been developed using the Ruby on Rails framework and incorporates RESTful API endpoints. The project was undertaken as part of an assignment for The nami.ai Team.
 
+## ***Features***
+* Built with Ruby on Rails
+* Utilizes RSpec for testing
+* PostgreSQL database
+* Implements JWT and Devise for authorization
+* Utilizes SecureRandom gem for generating shorten URL
+
 ## ***Potential Attack Vectors***
 While developing this application, I have considered various potential attack vectors and identified measures to enhance security in future versions. Although these measures have not been implemented in the current version, they can be considered for future updates. The main security measure in the current version is the utilization of JSON Web Tokens (JWT) for authentication.
 1. **Unauthorized Access:** To address unauthorized access, the application incorporates JWT for authentication. This ensures that only authenticated users with valid tokens can access the endpoints and perform actions.
