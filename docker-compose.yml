@@ -1,0 +1,25 @@
+version: '3'
+services:
+  web:
+    build: .
+    command: bash -c "rm -rf tmp/pids/server.pid && bundle exec rails s -b 0.0.0.0 -p 3000"
+    volumes:
+      - .:/app
+      - bundle:/usr/local/bundle
+    ports:
+      - "3900:3000"
+    environment:
+      - HISTFILE=/usr/src/app/log/.bash_history 
+    depends_on:
+      - db
+  db:
+    image: postgres:13-alpine
+    ports:
+      - "5492:5432"
+    environment:
+      - POSTGRES_PASSWORD=BKLSsad@1
+    volumes:
+      - pg_data:/var/lib/postgresql/data
+volumes:
+  pg_data:
+  bundle:
