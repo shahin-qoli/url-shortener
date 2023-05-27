@@ -71,14 +71,13 @@ group :test do
   gem "webdrivers"
   gem 'shoulda-matchers', '~> 5.0'
 end
-
+# Gems for test
 group :test, :development do
   gem 'rspec-rails', '~> 6.0.0'
   gem 'factory_bot_rails' 
-
 end
+# Added required Gems
 gem "pg", "~> 1.1"
 gem 'securerandom'
 gem 'jwt', '~> 2.2'
 gem 'devise'
-gem 'byebug'
