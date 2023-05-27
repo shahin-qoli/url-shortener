@@ -4,7 +4,7 @@ Clone the repository.
 
 This project is built using Docker. To build and run it at first time:
 ```
-docker-compose run web bundle exec rake db:setup
+docker-compose build
 docker-compose up -d
 docker-compose run web bundle exec rake db:setup
 ```
